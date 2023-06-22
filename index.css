@@ -17,7 +17,7 @@ h2 {
 	color: #43cc36;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(0.25turn,rgb(201, 33, 156), #edece9);
+	background: linear-gradient(0.25turn,rgb(26, 9, 120), #157463);
 }
 
 div#zentai {
@@ -40,5 +40,5 @@ img.sign {
 
 div#zentai > div {
 	margin-left: 5px;
-	background-color: #ffefaf;
+	background-color: #e355d3;
 }
