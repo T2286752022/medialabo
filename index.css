@@ -4,20 +4,20 @@ p {
 
 p.info {
 	font-size: small;
-	background-color: #63de33;
+	background-color: #463baa;
 }
 
 h1 {
 	background-color:rgb(10, 19, 13);
 	text-shadow: navy 0px 0 10px;
-	color: white;
+	color: rgb(214, 21, 21);
 }
 
 h2 {
 	color: #43cc36;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(0.25turn,rgb(230, 20, 20), #edece9);
+	background: linear-gradient(0.25turn,rgb(201, 33, 156), #edece9);
 }
 
 div#zentai {
