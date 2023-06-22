@@ -4,20 +4,20 @@ p {
 
 p.info {
 	font-size: small;
-	background-color: #e31313;
+	background-color: #dfdfdf;
 }
 
 h1 {
 	background-color:white;
 	text-shadow: navy 0px 0 10px;
-	color: rgb(226, 143, 143);
+	color: white;
 }
 
 h2 {
 	color: #3f3faf;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(0.25turn,white, #f31717);
+	background: linear-gradient(0.25turn,white, #ffefaf);
 }
 
 div#zentai {
@@ -40,6 +40,6 @@ img.sign {
 
 div#zentai > div {
 	margin-left: 5px;
-	background-color: #560404;
+	background-color: #ffefaf;
 }
 
