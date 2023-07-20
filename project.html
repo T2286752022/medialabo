@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <script src="weather.js" defer></script>
-  </head>
-  <body>
-    <h1>検索</h1>
-      <form action="radio.php" method="post">
-      	
-      	<p>検索<br>
-      		<input type="radio" name="btn" value="居酒屋">居酒屋
-      		<input type="radio" name="btn" value="ダイニングバー・バル">ダイニングバー・バル
-      		<input type="radio" name="btn" value="創作料理">創作料理
-      	</p>
-
-
-      </form>
-    <ul>
-        <li>世界の天気（検索結果1件）</li>
-        <ul>
-            <li>緯度: 116.3972</li>
-            <li>経度: 39.9075</li>
-            <li>天気: 曇りがち</li>
-            <li>最低気温: 9.94</li>
-            <li>最高気温 9.94</li>
-            <li>湿度: 14</li>
-            <li>風速: 2.65</li>
-            <li>風向: 197</li>
-            <li>都市名: 北京市</li>
-        </ul>
-    </ul>
-    <div id="result"></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+  <script src="weather.js" defer></script>
+</head>
+<body>
+  <h1>都市の天気検索</h1>
+  <form action="" method="get" id="searchForm" target="_blank">
+    <p>都市<br>
+      <input type="radio" name="basyo" value="360630">Cairo カイロ （エジプト）
+      <input type="radio" name="basyo" value="524901">Moscow モスクワ （ロシア）
+      <input type="radio" name="basyo" value="993800">Johannesburg ヨハネスブルク （南アフリカ）
+      <input type="radio" name="basyo" value="1816670">Beijing 北京 （中華人民共和国）
+      <input type="radio" name="basyo" value="1850147">Tokyo 東京 （日本）
+      <input type="radio" name="basyo" value="1880252">Singapore シンガポール
+      <input type="radio" name="basyo" value="2147714">Sydney シドニー （オーストラリア）
+      <input type="radio" name="basyo" value="2643743">London ロンドン （イギリス）
+      <input type="radio" name="basyo" value="2968815">Paris パリ （フランス）
+      <input type="radio" name="basyo" value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル）
+      <input type="radio" name="basyo" value="5128581">New York ニューヨーク （アメリカ合衆国）
+      <input type="radio" name="basyo" value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国）
+    </p>
+    <button type="submit">検索</button>
+  </form>
+</body>
 </html>
