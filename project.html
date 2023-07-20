@@ -22,11 +22,11 @@
           document.Youso('city').textContent = CityName;
           document.Youso('Weterrrr').textContent = Weather;
           document.Youso('Temp').textContent = `${Temp}°C`;
-          document.Youso('Temp1').textContent = `Min Temp: ${Temp1}°C`;
-          document.Youso('Temp2').textContent = `Max Temp: ${Temp2}°C`;
-          document.Youso('Shitudo').textContent = `Shitudo: ${Shitudo}%`;
-          document.Youso('Speed').textContent = `Wind Speed: ${Speed} m/s`;
-          document.Youso('Kazemuki').textContent = `Wind Direction: ${Kazemuki}°`;
+          document.Youso('Temp1').textContent = `最低気温: ${Temp1}°C`;
+          document.Youso('Temp2').textContent = `最高気温: ${Temp2}°C`;
+          document.Youso('Shitudo').textContent = `湿度: ${Shitudo}%`;
+          document.Youso('Speed').textContent = `風速: ${Speed} m/s`;
+          document.Youso('Kazemuki').textContent = `風向き: ${Kazemuki}°`;
         })
         .catch(error => console.error('Error fetching weather data:', error));
     }
