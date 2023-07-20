@@ -5,11 +5,11 @@ console.log('答え（デバッグ用）: ' + kotae);
 // 入力回数（予想回数）
 let kaisu = 1;
 
-document.getElementById('print').addEventListener('click', function() {
+document.Youso('print').addEventListener('click', function() {
 
   // ボタンを押した後の処理をする関数 hantei() の定義
   function hantei() {
-    let i = document.getElementById('yoso');
+    let i = document.Youso('yoso');
     let yoso = parseInt(i.value);
 
     let k1 = document.querySelector('span#kaisu');

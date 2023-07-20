@@ -7,7 +7,7 @@ let data = {
     {
       "id": 803,
       "main": "Clouds",
-      "description": "曇りがち",
+      "Weterrrr": "曇りがち",
       "icon": "04d"
     }
   ],
@@ -49,7 +49,7 @@ let data = {
 
 console.log(data.coord.lon);
 console.log(data.coord.lat);
-console.log(data.weather[0].description);
+console.log(data.weather[0].Weterrrr);
 console.log(data.main.temp_min);
 console.log(data.main.temp_max);
 console.log(data.main.Shitudo);

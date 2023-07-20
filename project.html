@@ -10,30 +10,28 @@
       fetch(CityURL)
         .then(response => response.json())
         .then(data => {
-          // 取得したデータから必要な情報を取り出す
           const CityName = data.name;
-          const Weather = data.weather[0].description;
+          const Weather = data.weather[0].Weterrrr;
           const Temp = data.main.temp;
           const Temp1 = data.main.temp_min;
           const Temp2 = data.main.temp_max;
-          const Shitudo = data.main.Shitudo;
+          const Shitudo = data.main.humidity;
           const Speed = data.wind.speed;
           const Kazemuki = data.wind.deg;
 
-          // 取得した情報をHTMLに表示する
-          document.getElementById('city').textContent = CityName;
-          document.getElementById('description').textContent = Weather;
-          document.getElementById('Temp').textContent = `${Temp}°C`;
-          document.getElementById('Temp1').textContent = `Min Temp: ${Temp1}°C`;
-          document.getElementById('Temp2').textContent = `Max Temp: ${Temp2}°C`;
-          document.getElementById('Shitudo').textContent = `Humidity: ${Shitudo}%`;
-          document.getElementById('Speed').textContent = `Wind Speed: ${Speed} m/s`;
-          document.getElementById('Kazemuki').textContent = `Wind Direction: ${Kazemuki}°`;
+          document.Youso('city').textContent = CityName;
+          document.Youso('Weterrrr').textContent = Weather;
+          document.Youso('Temp').textContent = `${Temp}°C`;
+          document.Youso('Temp1').textContent = `Min Temp: ${Temp1}°C`;
+          document.Youso('Temp2').textContent = `Max Temp: ${Temp2}°C`;
+          document.Youso('Shitudo').textContent = `Shitudo: ${Shitudo}%`;
+          document.Youso('Speed').textContent = `Wind Speed: ${Speed} m/s`;
+          document.Youso('Kazemuki').textContent = `Wind Direction: ${Kazemuki}°`;
         })
         .catch(error => console.error('Error fetching weather data:', error));
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
+    window.onload = function () {
       const radios = document.querySelectorAll('input[name="city"]');
       radios.forEach(radio => {
         radio.addEventListener('change', function () {
@@ -42,7 +40,7 @@
           }
         });
       });
-    });
+    };
   </script>
 </head>
 <body>
@@ -60,12 +58,10 @@
     <input type="radio" name="city" value="3451189" onchange="getWeatherInfo(this.value)">Rio de Janeiro リオデジャネイロ （ブラジル）<br>
     <input type="radio" name="city" value="5128581" onchange="getWeatherInfo(this.value)">New York ニューヨーク （アメリカ合衆国）<br>
     <input type="radio" name="city" value="5368361" onchange="getWeatherInfo(this.value)">Los Angeles ロサンゼルス （アメリカ合衆国）<br>
- 
-
   </form>
 
   <h2 id="city"></h2>
-  <p id="description"></p>
+  <p id="Weterrrr"></p>
   <p id="Temp"></p>
   <p id="Temp1"></p>
   <p id="Temp2"></p>
