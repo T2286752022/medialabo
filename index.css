@@ -1,23 +1,23 @@
 p {
-	color: blueviolet;
+	color: rgb(121, 44, 193);
 }
 
 p.info {
 	font-size: small;
-	background-color: #463baa;
+	background-color: #7746a8;
 }
 
 h1 {
-	background-color:rgb(10, 19, 13);
-	text-shadow: navy 0px 0 10px;
-	color: rgb(214, 21, 21);
+	background-color:rgb(49, 82, 60);
+	text-shadow: rgb(80, 80, 156) 0px 0 10px;
+	color: white;
 }
 
 h2 {
 	color: #43cc36;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(0.25turn,rgb(26, 9, 120), #157463);
+	background: linear-gradient(0.25turn,rgb(50, 40, 95), #6b603f);
 }
 
 div#zentai {
@@ -40,5 +40,5 @@ img.sign {
 
 div#zentai > div {
 	margin-left: 5px;
-	background-color: #e355d3;
+	background-color: #772937;
 }
