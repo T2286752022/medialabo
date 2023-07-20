@@ -11,24 +11,24 @@
         .then(response => response.json())
         .then(data => {
           // 取得したデータから必要な情報を取り出す
-          const cityName = data.name;
-          const weatherDescription = data.weather[0].description;
-          const currentTemp = data.main.temp;
-          const minTemp = data.main.temp_min;
-          const maxTemp = data.main.temp_max;
-          const humidity = data.main.humidity;
-          const windSpeed = data.wind.speed;
-          const windDeg = data.wind.deg;
+          const CityName = data.name;
+          const Weather = data.weather[0].description;
+          const Temp = data.main.temp;
+          const Temp1 = data.main.temp_min;
+          const Temp2 = data.main.temp_max;
+          const Shitudo = data.main.Shitudo;
+          const Speed = data.wind.speed;
+          const Kazemuki = data.wind.deg;
 
           // 取得した情報をHTMLに表示する
-          document.getElementById('city').textContent = cityName;
-          document.getElementById('description').textContent = weatherDescription;
-          document.getElementById('currentTemp').textContent = `${currentTemp}°C`;
-          document.getElementById('minTemp').textContent = `Min Temp: ${minTemp}°C`;
-          document.getElementById('maxTemp').textContent = `Max Temp: ${maxTemp}°C`;
-          document.getElementById('humidity').textContent = `Humidity: ${humidity}%`;
-          document.getElementById('windSpeed').textContent = `Wind Speed: ${windSpeed} m/s`;
-          document.getElementById('windDeg').textContent = `Wind Direction: ${windDeg}°`;
+          document.getElementById('city').textContent = CityName;
+          document.getElementById('description').textContent = Weather;
+          document.getElementById('Temp').textContent = `${Temp}°C`;
+          document.getElementById('Temp1').textContent = `Min Temp: ${Temp1}°C`;
+          document.getElementById('Temp2').textContent = `Max Temp: ${Temp2}°C`;
+          document.getElementById('Shitudo').textContent = `Humidity: ${Shitudo}%`;
+          document.getElementById('Speed').textContent = `Wind Speed: ${Speed} m/s`;
+          document.getElementById('Kazemuki').textContent = `Wind Direction: ${Kazemuki}°`;
         })
         .catch(error => console.error('Error fetching weather data:', error));
     }
@@ -57,11 +57,11 @@
 
   <h2 id="city"></h2>
   <p id="description"></p>
-  <p id="currentTemp"></p>
-  <p id="minTemp"></p>
-  <p id="maxTemp"></p>
-  <p id="humidity"></p>
-  <p id="windSpeed"></p>
-  <p id="windDeg"></p>
+  <p id="Temp"></p>
+  <p id="Temp1"></p>
+  <p id="Temp2"></p>
+  <p id="Shitudo"></p>
+  <p id="Speed"></p>
+  <p id="Kazemuki"></p>
 </body>
 </html>

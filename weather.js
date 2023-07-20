@@ -18,7 +18,7 @@ let data = {
     "temp_min": 9.94,
     "temp_max": 9.94,
     "pressure": 1022,
-    "humidity": 14,
+    "Shitudo": 14,
     "sea_level": 1022,
     "grnd_level": 1016
   },
@@ -52,7 +52,7 @@ console.log(data.coord.lat);
 console.log(data.weather[0].description);
 console.log(data.main.temp_min);
 console.log(data.main.temp_max);
-console.log(data.main.humidity);
+console.log(data.main.Shitudo);
 console.log(data.wind.speed);
 console.log(data.wind.deg);
 console.log(data.name);
