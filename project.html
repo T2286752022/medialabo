@@ -11,7 +11,7 @@
         .then(response => response.json())
         .then(data => {
           const CityName = data.name;
-          const Weather = data.weather[0].Weterrrr;
+          const Weather = data.weather[0].description;
           const Temp = data.main.temp;
           const Temp1 = data.main.temp_min;
           const Temp2 = data.main.temp_max;
@@ -19,15 +19,15 @@
           const Speed = data.wind.speed;
           const Kazemuki = data.wind.deg;
 
-          document.Youso('city').textContent = CityName;
-          document.Youso('Weterrrr').textContent = Weather;
-          document.Youso('Temp').textContent = `${Temp}°C`;
-          document.Youso('Temp1').textContent = `最低気温: ${Temp1}°C`;
-          document.Youso('Temp2').textContent = `最高気温: ${Temp2}°C`;
-          document.Youso('Shitudo').textContent = `湿度: ${Shitudo}%`;
-          document.Youso('Speed').textContent = `風速: ${Speed} m/s`;
-          document.Youso('Kazemuki').textContent = `風向き: ${Kazemuki}°`;
-        })
+          document.getElementById('city').textContent = CityName;
+          document.getElementById('Weterrrr').textContent = Weather;
+          document.getElementById('Temp').textContent = `${Temp}°C`;
+          document.getElementById('Temp1').textContent = `最低気温: ${Temp1}°C`;
+          document.getElementById('Temp2').textContent = `最高気温: ${Temp2}°C`;
+          document.getElementById('Shitudo').textContent = `湿度: ${Shitudo}%`;
+          document.getElementById('Speed').textContent = `風速: ${Speed} m/s`;
+          document.getElementById('Kazemuki').textContent = `風向き: ${Kazemuki}°`;
+        });
     }
 
     window.onload = function () {
