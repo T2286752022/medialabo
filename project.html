@@ -2,27 +2,66 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>My test page</title>
-  <script src="weather.js" defer></script>
+  <title>天気情報</title>
+  <script>
+    function getWeatherInfo(cityId) {
+      const CityURL = `https://www.nishita-lab.org/web-contents/jsons/openweather/${cityId}.json`;
+
+      fetch(CityURL)
+        .then(response => response.json())
+        .then(data => {
+          // 取得したデータから必要な情報を取り出す
+          const cityName = data.name;
+          const weatherDescription = data.weather[0].description;
+          const currentTemp = data.main.temp;
+          const minTemp = data.main.temp_min;
+          const maxTemp = data.main.temp_max;
+          const humidity = data.main.humidity;
+          const windSpeed = data.wind.speed;
+          const windDeg = data.wind.deg;
+
+          // 取得した情報をHTMLに表示する
+          document.getElementById('city').textContent = cityName;
+          document.getElementById('description').textContent = weatherDescription;
+          document.getElementById('currentTemp').textContent = `${currentTemp}°C`;
+          document.getElementById('minTemp').textContent = `Min Temp: ${minTemp}°C`;
+          document.getElementById('maxTemp').textContent = `Max Temp: ${maxTemp}°C`;
+          document.getElementById('humidity').textContent = `Humidity: ${humidity}%`;
+          document.getElementById('windSpeed').textContent = `Wind Speed: ${windSpeed} m/s`;
+          document.getElementById('windDeg').textContent = `Wind Direction: ${windDeg}°`;
+        })
+        .catch(error => console.error('Error fetching weather data:', error));
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const radios = document.querySelectorAll('input[name="city"]');
+      radios.forEach(radio => {
+        radio.addEventListener('change', function () {
+          if (this.checked) {
+            getWeatherInfo(this.value);
+          }
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-  <h1>都市の天気検索</h1>
-  <form action="" method="get" id="searchForm" target="_blank">
-    <p>都市<br>
-      <input type="radio" name="basyo" value="360630">Cairo カイロ （エジプト）
-      <input type="radio" name="basyo" value="524901">Moscow モスクワ （ロシア）
-      <input type="radio" name="basyo" value="993800">Johannesburg ヨハネスブルク （南アフリカ）
-      <input type="radio" name="basyo" value="1816670">Beijing 北京 （中華人民共和国）
-      <input type="radio" name="basyo" value="1850147">Tokyo 東京 （日本）
-      <input type="radio" name="basyo" value="1880252">Singapore シンガポール
-      <input type="radio" name="basyo" value="2147714">Sydney シドニー （オーストラリア）
-      <input type="radio" name="basyo" value="2643743">London ロンドン （イギリス）
-      <input type="radio" name="basyo" value="2968815">Paris パリ （フランス）
-      <input type="radio" name="basyo" value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル）
-      <input type="radio" name="basyo" value="5128581">New York ニューヨーク （アメリカ合衆国）
-      <input type="radio" name="basyo" value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国）
-    </p>
-    <button type="submit">検索</button>
+  <h1>天気情報</h1>
+  <form action="">
+    <input type="radio" name="city" value="360630">Cairo カイロ （エジプト）<br>
+    <input type="radio" name="city" value="524901">Moscow モスクワ （ロシア）<br>
+    <input type="radio" name="city" value="993800">Johannesburg ヨハネスブルク （南アフリカ）<br>
+    <!-- 他の都市のラジオボタンをここに追加 -->
+
   </form>
+
+  <h2 id="city"></h2>
+  <p id="description"></p>
+  <p id="currentTemp"></p>
+  <p id="minTemp"></p>
+  <p id="maxTemp"></p>
+  <p id="humidity"></p>
+  <p id="windSpeed"></p>
+  <p id="windDeg"></p>
 </body>
 </html>
