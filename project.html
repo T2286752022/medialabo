@@ -48,10 +48,19 @@
 <body>
   <h1>天気情報</h1>
   <form action="">
-    <input type="radio" name="city" value="360630">Cairo カイロ （エジプト）<br>
-    <input type="radio" name="city" value="524901">Moscow モスクワ （ロシア）<br>
-    <input type="radio" name="city" value="993800">Johannesburg ヨハネスブルク （南アフリカ）<br>
-    <!-- 他の都市のラジオボタンをここに追加 -->
+    <input type="radio" name="city" value="360630" onchange="getWeatherInfo(this.value)">Cairo カイロ （エジプト）<br>
+    <input type="radio" name="city" value="524901" onchange="getWeatherInfo(this.value)">Moscow モスクワ （ロシア）<br>
+    <input type="radio" name="city" value="993800" onchange="getWeatherInfo(this.value)">Johannesburg ヨハネスブルク （南アフリカ）<br>
+    <input type="radio" name="city" value="1816670" onchange="getWeatherInfo(this.value)">Beijing 北京 （中華人民共和国）<br>
+    <input type="radio" name="city" value="1850147" onchange="getWeatherInfo(this.value)">Tokyo 東京 （日本）<br>
+    <input type="radio" name="city" value="1880252" onchange="getWeatherInfo(this.value)">Singapore シンガポール<br>
+    <input type="radio" name="city" value="2147714" onchange="getWeatherInfo(this.value)">Sydney シドニー （オーストラリア）<br>
+    <input type="radio" name="city" value="2643743" onchange="getWeatherInfo(this.value)">London ロンドン （イギリス）<br>
+    <input type="radio" name="city" value="2968815" onchange="getWeatherInfo(this.value)">Paris パリ （フランス）<br>
+    <input type="radio" name="city" value="3451189" onchange="getWeatherInfo(this.value)">Rio de Janeiro リオデジャネイロ （ブラジル）<br>
+    <input type="radio" name="city" value="5128581" onchange="getWeatherInfo(this.value)">New York ニューヨーク （アメリカ合衆国）<br>
+    <input type="radio" name="city" value="5368361" onchange="getWeatherInfo(this.value)">Los Angeles ロサンゼルス （アメリカ合衆国）<br>
+ 
 
   </form>
 
