@@ -3,6 +3,91 @@
 <head>
   <meta charset="utf-8">
   <title>天気情報</title>
+  <style>
+    input[type="radio"][value="360630"] {
+      background-image: url('https://www.asahi-net.or.jp/~yq3t-hruc/img/EGL.GIF');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="524901"] {
+      background-image: url('flags/russia.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="993800"] {
+      background-image: url('flags/south_africa.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="1816670"] {
+      background-image: url('flags/china.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="1850147"] {
+      background-image: url('flags/japan.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="1880252"] {
+      background-image: url('flags/singapore.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="2147714"] {
+      background-image: url('flags/australia.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="2643743"] {
+      background-image: url('flags/uk.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="2968815"] {
+      background-image: url('flags/france.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="3451189"] {
+      background-image: url('flags/brazil.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="5128581"] {
+      background-image: url('flags/usa.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+
+    input[type="radio"][value="5368361"] {
+      background-image: url('flags/usa.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
+    }
+  </style>
   <script>
     function getWeatherInfo(cityId) {
       const CityURL = `https://www.nishita-lab.org/web-contents/jsons/openweather/${cityId}.json`;
@@ -21,7 +106,7 @@
 
           document.getElementById('city').textContent = CityName;
           document.getElementById('Weterrrr').textContent = Weather;
-          document.getElementById('Temp').textContent = `${Temp}°C`;
+          document.getElementById('Temp').textContent = `現在の気温：${Temp}°C`;
           document.getElementById('Temp1').textContent = `最低気温: ${Temp1}°C`;
           document.getElementById('Temp2').textContent = `最高気温: ${Temp2}°C`;
           document.getElementById('Shitudo').textContent = `湿度: ${Shitudo}%`;
