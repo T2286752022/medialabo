@@ -14,6 +14,10 @@ let data = [
 //// 注意: 以上は編集しないこと!
 // 練習4-2 メッセージ追加プログラム
 let h2 = document.querySelector('h2#ex42');
+<h1>DOMプログラミング演習</h1>
+<h2 id="ex42">練習４−２：説明文の追加</h2>
+<p style="text-emphasis: sesame green;">写真と都市の緯度経度のページです</p>
+<h2>練習４−３；写真表を作る</h2>
 let p = document.createElement('p');
 p.style='text-emphasis: sesame green';
 p.textContent = '写真表と都市の緯度経度のページです';
