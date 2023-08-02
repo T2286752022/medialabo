@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
   let kaisu = 1;
 
   // 予想ボタンをクリックしたときの処理
-  document.getElementById('guessButton').addEventListener('click', function() {
+  document.getElementById('print').addEventListener('click', function() {
     // 予想した数字を取得
-    let guessInput = document.getElementById('guessInput');
+    let guessInput = document.getElementById('yoso');
     let yoso = parseInt(guessInput.value);
 
     let SpanKaisu = document.querySelector('span#kaisu');
