@@ -1,5 +1,5 @@
 p {
-	color: blueviolet;
+	color: rgb(253, 253, 253);
 }
 
 p.info {
@@ -8,16 +8,19 @@ p.info {
 }
 
 h1 {
-	background-color:rgb(37, 138, 19);
-	text-shadow: rgb(120, 52, 106) 0px 0 10px;
-	color: rgb(49, 11, 87);
+	background-color:rgb(0, 0, 0);
+	text-shadow: rgb(141, 158, 255) 0px 0 10px;
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	font-size: 36px;
+    padding: 20px;
 }
 
 h2 {
-	color: #cbd062;
+	color: #000000;
 	margin: 5px;
 	font-family: cursive;
-	background: linear-gradient(0.25turn,rgb(68, 112, 97), #8a7ee1);
+	background: linear-gradient(0.25turn,rgb(159, 166, 255), #d87efc);
 }
 
 div#zentai {
@@ -40,5 +43,5 @@ img.sign {
 
 div#zentai > div {
 	margin-left: 5px;
-	background-color: #7b6c32;
+	background-color: #74621b;
 }
