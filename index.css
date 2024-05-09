@@ -16,6 +16,15 @@ h1 {
     padding: 20px;
 }
 
+.illustration {
+    position: absolute; 
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%); 
+    width: 100px; 
+    height: 100px; 
+}
+
 h2 {
 	color: #000000;
 	margin: 5px;
