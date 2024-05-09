@@ -32,6 +32,11 @@ h2 {
 	background: linear-gradient(0.25turn,rgb(159, 166, 255), #d87efc);
 }
 
+h3 {
+    background-color: rgba(80, 147, 255, 0.1); 
+    padding: 5px; 
+}
+
 div#zentai {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
