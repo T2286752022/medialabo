@@ -27,19 +27,53 @@ body {
     cursor: pointer;
   }
   
-  /* 選択されたラジオボタンのスタイル */
+ 
   input[type="radio"]:checked + label {
     background-color: #f0f0f0;
   }
   
-  /* ラジオボタンに対応する国旗のスタイル */
-  input[type="radio"][value="360630"] + label {
+  input[type="radio"][value="360630"] {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/260px-Flag_of_Egypt.svg.png');
   }
   
-  input[type="radio"][value="524901"] + label {
+  input[type="radio"][value="524901"] {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/260px-Flag_of_Russia.svg.png');
   }
   
-  /* 他の国旗のスタイルも同様に追加 */
+  input[type="radio"][value="993800"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/260px-Flag_of_South_Africa.svg.png');
+  }
+  
+  input[type="radio"][value="1816670"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/260px-Flag_of_the_People%27s_Republic_of_China.svg.png');
+  }
+  
+  input[type="radio"][value="1850147"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/260px-Flag_of_Japan.svg.png');
+  }
+  
+  input[type="radio"][value="1880252"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/260px-Flag_of_Singapore.svg.png');
+  }
+  
+  input[type="radio"][value="2147714"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/300px-Flag_of_Australia.svg.png');
+  }
+  
+  input[type="radio"][value="2643743"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/300px-Flag_of_the_United_Kingdom_%283-5%29.svg.png');
+  }
+  
+  input[type="radio"][value="2968815"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/260px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png');
+  }
+  
+  input[type="radio"][value="3451189"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/254px-Flag_of_Brazil.svg.pngflags/brazil.png');
+  }
+  
+  input[type="radio"][value="5128581"],
+  input[type="radio"][value="5368361"] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/292px-Flag_of_the_United_States.svg.png');
+  }
   
