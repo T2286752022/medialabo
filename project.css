@@ -16,8 +16,9 @@ body {
   }
   
   input[type="radio"] {
-    display: none;
+    display: inline; 
   }
+  
   
   label {
     display: block;
@@ -28,14 +29,25 @@ body {
   }
   h1 {
     text-align: center;
-    background-color: #3498db; 
+    background-color: #2682e3; 
     color: white; 
     padding: 20px; 
+  }
+  .result-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .result {
+    width: 50%; 
+    margin-top: 20px;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
   }
   
   
  
-  /* ラジオボタンに対応する国旗のスタイル */
 input[type="radio"][value="360630"] + label {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/260px-Flag_of_Egypt.svg.png');
   }
