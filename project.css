@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 8%;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* 選択されたラジオボタンのスタイル */
+  input[type="radio"]:checked + label {
+    background-color: #f0f0f0;
+  }
+  
+  /* ラジオボタンに対応する国旗のスタイル */
+  input[type="radio"][value="360630"] + label {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/260px-Flag_of_Egypt.svg.png');
+  }
+  
+  input[type="radio"][value="524901"] + label {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/260px-Flag_of_Russia.svg.png');
+  }
+  
+  /* 他の国旗のスタイルも同様に追加 */
+  
