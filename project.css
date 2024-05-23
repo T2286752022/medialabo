@@ -16,6 +16,7 @@ body {
   }
   
   input[type="radio"] {
+    display: none;
   }
   
   label {
@@ -25,6 +26,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+  h1 {
+    text-align: center;
+    background-color: #3498db; 
+    color: white; 
+    padding: 20px; 
+  }
+  
   
  
   /* ラジオボタンに対応する国旗のスタイル */
