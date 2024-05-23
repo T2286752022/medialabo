@@ -127,7 +127,8 @@
           document.getElementById('city').textContent = CityName;
           document.getElementById('Weterrrr').textContent = Weather;
           document.getElementById('Temp').textContent = `現在の気温：${Temp}°C`;
-          document.getElementById('Temp1').textContent = `最低気温: ${Temp1}°C`;
+          document.getElementById('Temp1').textContent
+ z= `最低気温: ${Temp1}°C`;
           document.getElementById('Temp2').textContent = `最高気温: ${Temp2}°C`;
           document.getElementById('Shitudo').textContent = `湿度: ${Shitudo}%`;
           document.getElementById('Speed').textContent = `風速: ${Speed} m/s`;
@@ -148,18 +149,18 @@
 <body>
   <h1>天気情報</h1>
   <form>
-    <label><input type="radio" name="city" value="360630" onchange="getWeatherInfo(this.value)">カイロ, エジプト</label>
-    <label><input type="radio" name="city" value="524901" onchange="getWeatherInfo(this.value)">モスクワ, ロシア</label>
-    <label><input type="radio" name="city" value="993800" onchange="getWeatherInfo(this.value)">プレトリア, 南アフリカ</label>
-    <label><input type="radio" name="city" value="1816670" onchange="getWeatherInfo(this.value)">北京, 中国</label>
-    <label><input type="radio" name="city" value="1850147" onchange="getWeatherInfo(this.value)">東京, 日本</label>
-    <label><input type="radio" name="city" value="1880252" onchange="getWeatherInfo(this.value)">シンガポール</label>
-    <label><input type="radio" name="city" value="2147714" onchange="getWeatherInfo(this.value)">シドニー, オーストラリア</label>
-    <label><input type="radio" name="city" value="2643743" onchange="getWeatherInfo(this.value)">ロンドン, イギリス</label>
-    <label><input type="radio" name="city" value="2968815" onchange="getWeatherInfo(this.value)">パリ, フランス</label>
-    <label><input type="radio" name="city" value="3451189" onchange="getWeatherInfo(this.value)">ブラジル</label>
-    <label><input type="radio" name="city" value="5128581" onchange="getWeatherInfo(this.value)">ニューヨーク, アメリカ</label>
-    <label><input type="radio" name="city" value="5368361" onchange="getWeatherInfo(this.value)">ロサンゼルス, アメリカ</label>
+    <label><input type="radio" name="city" value="360630" onclick="getWeatherInfo(this.value)">カイロ, エジプト</label>
+    <label><input type="radio" name="city" value="524901" onclick="getWeatherInfo(this.value)">モスクワ, ロシア</label>
+    <label><input type="radio" name="city" value="993800" onclick="getWeatherInfo(this.value)">プレトリア, 南アフリカ</label>
+    <label><input type="radio" name="city" value="1816670" onclick="getWeatherInfo(this.value)">北京, 中国</label>
+    <label><input type="radio" name="city" value="1850147" onclick="getWeatherInfo(this.value)">東京, 日本</label>
+    <label><input type="radio" name="city" value="1880252" onclick="getWeatherInfo(this.value)">シンガポール</label>
+    <label><input type="radio" name="city" value="2147714" onclick="getWeatherInfo(this.value)">シドニー, オーストラリア</label>
+    <label><input type="radio" name="city" value="2643743" onclick="getWeatherInfo(this.value)">ロンドン, イギリス</label>
+    <label><input type="radio" name="city" value="2968815" onclick="getWeatherInfo(this.value)">パリ, フランス</label>
+    <label><input type="radio" name="city" value="3451189" onclick="getWeatherInfo(this.value)">ブラジル</label>
+    <label><input type="radio" name="city" value="5128581" onclick="getWeatherInfo(this.value)">ニューヨーク, アメリカ</label>
+    <label><input type="radio" name="city" value="5368361" onclick="getWeatherInfo(this.value)">ロサンゼルス, アメリカ</label>
   </form>
 
   <div class="result-container">
