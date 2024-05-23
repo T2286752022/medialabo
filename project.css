@@ -16,7 +16,6 @@ body {
   }
   
   input[type="radio"] {
-    display: none;
   }
   
   label {
