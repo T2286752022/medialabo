@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,112 +6,93 @@
   <title>天気情報</title>
   <link rel="stylesheet" href="project.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0 8%;
-      padding: 0;
-    }
-  
-    h1 {
-      text-align: center;
-    }
-  
-    form {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-  
-    input[type="radio"] {
-      display: inline; 
-    }
-  
-    label {
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  
-    h1 {
-      text-align: center;
-      background-color: #2682e3; 
-      color: white; 
-      padding: 20px; 
-    }
-  
-    .result-container {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .result {
-      width: 50%; /* 画面の左半分に幅を設定 */
-      margin-top: 20px; /* 上部の余白 */
-      padding: 20px; /* 内部の余白 */
-      border: 1px solid #ccc; /* 枠線を追加 */
-      border-radius: 5px; /* 枠線の角を丸くする */
-    }
-  
-    /* ラジオボタンに対応する国旗のスタイル */
-    input[type="radio"][value="360630"] + label {
+    input[type="radio"][value="360630"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/260px-Flag_of_Egypt.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="524901"] + label {
+
+    input[type="radio"][value="524901"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/260px-Flag_of_Russia.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="993800"] + label {
+
+    input[type="radio"][value="993800"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/260px-Flag_of_South_Africa.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="1816670"] + label {
+
+    input[type="radio"][value="1816670"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/260px-Flag_of_the_People%27s_Republic_of_China.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="1850147"] + label {
+
+    input[type="radio"][value="1850147"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/260px-Flag_of_Japan.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="1880252"] + label {
+
+    input[type="radio"][value="1880252"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/260px-Flag_of_Singapore.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="2147714"] + label {
+
+    input[type="radio"][value="2147714"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/300px-Flag_of_Australia.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="2643743"] + label {
+
+    input[type="radio"][value="2643743"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/300px-Flag_of_the_United_Kingdom_%283-5%29.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="2968815"] + label {
+
+    input[type="radio"][value="2968815"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/260px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="3451189"] + label {
+
+    input[type="radio"][value="3451189"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/254px-Flag_of_Brazil.svg.pngflags/brazil.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    input[type="radio"][value="5128581"] + label,
-    input[type="radio"][value="5368361"] + label {
+
+    input[type="radio"][value="5128581"] {
       background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/292px-Flag_of_the_United_States.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
-    
-    /* 結果表示部分に追加 */
-    .result-container img {
-      max-width: 100px; /* 国旗画像の最大幅を設定 */
-      display: block; /* インライン要素をブロック要素に変更 */
-      margin: 10px auto; /* 中央配置 */
+
+    input[type="radio"][value="5368361"] {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/292px-Flag_of_the_United_States.svg.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 30px;
     }
   </style>
   <script>
     function getWeatherInfo(cityId) {
-      const CityName = document.querySelector(`input[name="city"][value="${cityId}"]`).nextElementSibling.textContent;
-      const CountryName = CityName.split(', ')[1];
-      const CityURL = `https://www.nishita-lab.org/web-contents/jsons/openweather/${CountryName}/${CityName}.json`;
+      const CityURL = `https://www.nishita-lab.org/web-contents/jsons/openweather/${cityId}.json`;
 
       fetch(CityURL)
         .then(response => response.json())
@@ -127,54 +109,54 @@
           document.getElementById('city').textContent = CityName;
           document.getElementById('Weterrrr').textContent = Weather;
           document.getElementById('Temp').textContent = `現在の気温：${Temp}°C`;
-          document.getElementById('Temp1').textContent
- z= `最低気温: ${Temp1}°C`;
+          document.getElementById('Temp1').textContent = `最低気温: ${Temp1}°C`;
           document.getElementById('Temp2').textContent = `最高気温: ${Temp2}°C`;
           document.getElementById('Shitudo').textContent = `湿度: ${Shitudo}%`;
           document.getElementById('Speed').textContent = `風速: ${Speed} m/s`;
           document.getElementById('Kazemuki').textContent = `風向き: ${Kazemuki}°`;
-
-          // 国旗の画像を表示
-          const countryCode = data.sys.country; // 国コードを取得
-          const flagImg = document.createElement('img'); // img要素を作成
-          flagImg.src = `https://www.countryflags.io/${countryCode}/flat/64.png`; // 国旗画像のURLを設定
-          flagImg.alt = `${countryCode}の国旗`; // alt属性を設定
-          const flagContainer = document.getElementById('flag-container'); // 国旗を表示するコンテナ要素を取得
-          flagContainer.innerHTML = ''; // コンテナ要素の中身をクリア
-          flagContainer.appendChild(flagImg); // 国旗画像をコンテナに追加
         });
     }
+
+    window.onload = function () {
+      const radios = document.querySelectorAll('input[name="city"]');
+      radios.forEach(radio => {
+        radio.addEventListener('change', function () {
+          if (this.checked) {
+            getWeatherInfo(this.value);
+          }
+        });
+      });
+    };
   </script>
 </head>
 <body>
   <h1>天気情報</h1>
-  <form>
-    <label><input type="radio" name="city" value="360630" onclick="getWeatherInfo(this.value)">カイロ, エジプト</label>
-    <label><input type="radio" name="city" value="524901" onclick="getWeatherInfo(this.value)">モスクワ, ロシア</label>
-    <label><input type="radio" name="city" value="993800" onclick="getWeatherInfo(this.value)">プレトリア, 南アフリカ</label>
-    <label><input type="radio" name="city" value="1816670" onclick="getWeatherInfo(this.value)">北京, 中国</label>
-    <label><input type="radio" name="city" value="1850147" onclick="getWeatherInfo(this.value)">東京, 日本</label>
-    <label><input type="radio" name="city" value="1880252" onclick="getWeatherInfo(this.value)">シンガポール</label>
-    <label><input type="radio" name="city" value="2147714" onclick="getWeatherInfo(this.value)">シドニー, オーストラリア</label>
-    <label><input type="radio" name="city" value="2643743" onclick="getWeatherInfo(this.value)">ロンドン, イギリス</label>
-    <label><input type="radio" name="city" value="2968815" onclick="getWeatherInfo(this.value)">パリ, フランス</label>
-    <label><input type="radio" name="city" value="3451189" onclick="getWeatherInfo(this.value)">ブラジル</label>
-    <label><input type="radio" name="city" value="5128581" onclick="getWeatherInfo(this.value)">ニューヨーク, アメリカ</label>
-    <label><input type="radio" name="city" value="5368361" onclick="getWeatherInfo(this.value)">ロサンゼルス, アメリカ</label>
-  </form>
-
   <div class="result-container">
-    <div class="result">
-      <h2 id="city"></h2>
-      <p id="Weterrrr"></p>
-      <p id="Temp"></p>
-      <p id="Temp1"></p>
-      <p id="Temp2"></p>
-      <p id="Shitudo"></p>
-      <p id="Speed"></p>
-      <p id="Kazemuki"></p>
-      <div id="flag-container"></div>
-    </div>
-  </div>
+  <form action="">
+    <input type="radio" name="city" value="360630" onchange="getWeatherInfo(this.value)">Cairo カイロ （エジプト）<br>
+    <input type="radio" name="city" value="524901" onchange="getWeatherInfo(this.value)">Moscow モスクワ （ロシア）<br>
+    <input type="radio" name="city" value="993800" onchange="getWeatherInfo(this.value)">Johannesburg ヨハネスブルク （南アフリカ）<br>
+    <input type="radio" name="city" value="1816670" onchange="getWeatherInfo(this.value)">Beijing 北京 （中華人民共和国）<br>
+    <input type="radio" name="city" value="1850147" onchange="getWeatherInfo(this.value)">Tokyo 東京 （日本）<br>
+    <input type="radio" name="city" value="1880252" onchange="getWeatherInfo(this.value)">Singapore シンガポール<br>
+    <input type="radio" name="city" value="2147714" onchange="getWeatherInfo(this.value)">Sydney シドニー （オーストラリア）<br>
+    <input type="radio" name="city" value="2643743" onchange="getWeatherInfo(this.value)">London ロンドン （イギリス）<br>
+    <input type="radio" name="city" value="2968815" onchange="getWeatherInfo(this.value)">Paris パリ （フランス）<br>
+    <input type="radio" name="city" value="3451189" onchange="getWeatherInfo(this.value)">Rio de Janeiro リオデジャネイロ （ブラジル）<br>
+    <input type="radio" name="city" value="5128581" onchange="getWeatherInfo(this.value)">New York ニューヨーク （アメリカ合衆国）<br>
+    <input type="radio" name="city" value="5368361" onchange="getWeatherInfo(this.value)">Los Angeles ロサンゼルス （アメリカ合衆国）<br>
+  </form>
+  <div class="result">
+
+  <h2 id="city"></h2>
+  <p id="Weterrrr"></p>
+  <p id="Temp"></p>
+  <p id="Temp1"></p>
+  <p id="Temp2"></p>
+  <p id="Shitudo"></p>
+  <p id="Speed"></p>
+  <p id="Kazemuki"></p>
+</div>
+</div>
 </body>
 </html>
