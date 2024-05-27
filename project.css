@@ -44,51 +44,103 @@ body {
     border: 1px solid #ccc; /* 枠線を追加 */
     border-radius: 5px; /* 枠線の角を丸くする */
   }
-  
+  .result {
+    /* 背景画像を設定 */
+    background-repeat: no-repeat;
+    background-position: right bottom; /* 右下に配置 */
+    background-size: 480px; /* 背景画像のサイズを調整 */
+  }
+
+  /* 国旗画像のスタイル */
+  #flag-container img {
+    max-width: 100px; /* 国旗画像の最大幅を設定 */
+    display: block; /* インライン要素をブロック要素に変更 */
+    margin: 10px auto; /* 中央配置 */
+    opacity: 0.3; /* 透明度を設定 */
+  }
   
  
-  /* ラジオボタンに対応する国旗のスタイル */
-input[type="radio"][value="360630"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/260px-Flag_of_Egypt.svg.png');
+  input[type="radio"][value="360630"] {
+    background-image: url('images/egypt.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="524901"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/260px-Flag_of_Russia.svg.png');
+  input[type="radio"][value="524901"] {
+    background-image: url('images/russia.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="993800"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/260px-Flag_of_South_Africa.svg.png');
+  input[type="radio"][value="993800"] {
+    background-image: url('images/south_africa.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="1816670"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/260px-Flag_of_the_People%27s_Republic_of_China.svg.png');
+  input[type="radio"][value="1816670"] {
+    background-image: url('images/china.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="1850147"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/260px-Flag_of_Japan.svg.png');
+  input[type="radio"][value="1850147"] {
+    background-image: url('images/japan.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="1880252"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/260px-Flag_of_Singapore.svg.png');
+  input[type="radio"][value="1880252"] {
+    background-image: url('images/singapore.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="2147714"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/300px-Flag_of_Australia.svg.png');
+  input[type="radio"][value="2147714"] {
+    background-image: url('images/australia.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="2643743"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/300px-Flag_of_the_United_Kingdom_%283-5%29.svg.png');
+  input[type="radio"][value="2643743"] {
+    background-image: url('images/uk.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="2968815"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/260px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png');
+  input[type="radio"][value="2968815"] {
+    background-image: url('images/france.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="3451189"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/254px-Flag_of_Brazil.svg.pngflags/brazil.png');
+  input[type="radio"][value="3451189"] {
+    background-image: url('images/brazil.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
   
-  input[type="radio"][value="5128581"] + label,
-  input[type="radio"][value="5368361"] + label {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/292px-Flag_of_the_United_States.svg.png');
+  input[type="radio"][value="5128581"] {
+    background-image: url('images/usa.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
   }
+  
+  input[type="radio"][value="5368361"] {
+    background-image: url('images/usa.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+  }
+  
