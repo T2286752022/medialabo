@@ -1,95 +1,9 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>天気情報</title>
   <link rel="stylesheet" href="project.css">
-  <style>
-    input[type="radio"][value="360630"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/260px-Flag_of_Egypt.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="524901"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/260px-Flag_of_Russia.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="993800"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/260px-Flag_of_South_Africa.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="1816670"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/260px-Flag_of_the_People%27s_Republic_of_China.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="1850147"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/260px-Flag_of_Japan.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="1880252"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/260px-Flag_of_Singapore.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="2147714"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/300px-Flag_of_Australia.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="2643743"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/300px-Flag_of_the_United_Kingdom_%283-5%29.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="2968815"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/260px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="3451189"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/254px-Flag_of_Brazil.svg.pngflags/brazil.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="5128581"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/292px-Flag_of_the_United_States.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-
-    input[type="radio"][value="5368361"] {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/292px-Flag_of_the_United_States.svg.png');
-      background-repeat: no-repeat;
-      background-position: left center;
-      padding-left: 30px;
-    }
-  </style>
   <script>
     function getWeatherInfo(cityId) {
       const CityURL = `https://www.nishita-lab.org/web-contents/jsons/openweather/${cityId}.json`;
@@ -132,31 +46,30 @@
 <body>
   <h1>天気情報</h1>
   <div class="result-container">
-  <form action="">
-    <input type="radio" name="city" value="360630" onchange="getWeatherInfo(this.value)">Cairo カイロ （エジプト）<br>
-    <input type="radio" name="city" value="524901" onchange="getWeatherInfo(this.value)">Moscow モスクワ （ロシア）<br>
-    <input type="radio" name="city" value="993800" onchange="getWeatherInfo(this.value)">Johannesburg ヨハネスブルク （南アフリカ）<br>
-    <input type="radio" name="city" value="1816670" onchange="getWeatherInfo(this.value)">Beijing 北京 （中華人民共和国）<br>
-    <input type="radio" name="city" value="1850147" onchange="getWeatherInfo(this.value)">Tokyo 東京 （日本）<br>
-    <input type="radio" name="city" value="1880252" onchange="getWeatherInfo(this.value)">Singapore シンガポール<br>
-    <input type="radio" name="city" value="2147714" onchange="getWeatherInfo(this.value)">Sydney シドニー （オーストラリア）<br>
-    <input type="radio" name="city" value="2643743" onchange="getWeatherInfo(this.value)">London ロンドン （イギリス）<br>
-    <input type="radio" name="city" value="2968815" onchange="getWeatherInfo(this.value)">Paris パリ （フランス）<br>
-    <input type="radio" name="city" value="3451189" onchange="getWeatherInfo(this.value)">Rio de Janeiro リオデジャネイロ （ブラジル）<br>
-    <input type="radio" name="city" value="5128581" onchange="getWeatherInfo(this.value)">New York ニューヨーク （アメリカ合衆国）<br>
-    <input type="radio" name="city" value="5368361" onchange="getWeatherInfo(this.value)">Los Angeles ロサンゼルス （アメリカ合衆国）<br>
-  </form>
-  <div class="result">
-
-  <h2 id="city"></h2>
-  <p id="Weterrrr"></p>
-  <p id="Temp"></p>
-  <p id="Temp1"></p>
-  <p id="Temp2"></p>
-  <p id="Shitudo"></p>
-  <p id="Speed"></p>
-  <p id="Kazemuki"></p>
-</div>
-</div>
+    <form action="">
+      <input type="radio" name="city" value="360630">Cairo カイロ （エジプト）<br>
+      <input type="radio" name="city" value="524901">Moscow モスクワ （ロシア）<br>
+      <input type="radio" name="city" value="993800">Johannesburg ヨハネスブルク （南アフリカ）<br>
+      <input type="radio" name="city" value="1816670">Beijing 北京 （中華人民共和国）<br>
+      <input type="radio" name="city" value="1850147">Tokyo 東京 （日本）<br>
+      <input type="radio" name="city" value="1880252">Singapore シンガポール<br>
+      <input type="radio" name="city" value="2147714">Sydney シドニー （オーストラリア）<br>
+      <input type="radio" name="city" value="2643743">London ロンドン （イギリス）<br>
+      <input type="radio" name="city" value="2968815">Paris パリ （フランス）<br>
+      <input type="radio" name="city" value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル）<br>
+      <input type="radio" name="city" value="5128581">New York ニューヨーク （アメリカ合衆国）<br>
+      <input type="radio" name="city" value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国）<br>
+    </form>
+    <div class="result">
+      <h2 id="city"></h2>
+      <p id="Weterrrr"></p>
+      <p id="Temp"></p>
+      <p id="Temp1"></p>
+      <p id="Temp2"></p>
+      <p id="Shitudo"></p>
+      <p id="Speed"></p>
+      <p id="Kazemuki"></p>
+    </div>
+  </div>
 </body>
 </html>
