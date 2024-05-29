@@ -1,146 +1,137 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0 8%;
-    padding: 0;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  input[type="radio"] {
-    display: inline; 
-  }
-  
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  h1 {
-    text-align: center;
-    background-color: #2682e3; 
-    color: white; 
-    padding: 20px; 
-  }
-  .result-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .result {
-    width: 50%; /* 画面の左半分に幅を設定 */
-    margin-top: 20px; /* 上部の余白 */
-    padding: 20px; /* 内部の余白 */
-    border: 1px solid #ccc; /* 枠線を追加 */
-    border-radius: 5px; /* 枠線の角を丸くする */
-  }
-  .result {
-    /* 背景画像を設定 */
-    background-repeat: no-repeat;
-    background-position: right bottom; /* 右下に配置 */
-    background-size: 480px; /* 背景画像のサイズを調整 */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0 8%;
+  padding: 0;
+}
 
-  /* 国旗画像のスタイル */
-  #flag-container img {
-    max-width: 100px; /* 国旗画像の最大幅を設定 */
-    display: block; /* インライン要素をブロック要素に変更 */
-    margin: 10px auto; /* 中央配置 */
-    opacity: 0.3; /* 透明度を設定 */
-  }
-  
- 
-  input[type="radio"][value="360630"] {
-    background-image: url('images/egypt.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="524901"] {
-    background-image: url('images/russia.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="993800"] {
-    background-image: url('images/south_africa.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="1816670"] {
-    background-image: url('images/china.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="1850147"] {
-    background-image: url('images/japan.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="1880252"] {
-    background-image: url('images/singapore.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="2147714"] {
-    background-image: url('images/australia.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="2643743"] {
-    background-image: url('images/uk.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="2968815"] {
-    background-image: url('images/france.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="3451189"] {
-    background-image: url('images/brazil.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="5128581"] {
-    background-image: url('images/usa.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
-  input[type="radio"][value="5368361"] {
-    background-image: url('images/usa.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 40px;
-  }
-  
+h1 {
+  text-align: center;
+  background-color: #2682e3;
+  color: white;
+  padding: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input[type="radio"] {
+  display: inline;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  width: 50%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+
+
+.flag-label img {
+  max-width: 100px;
+  display: block;
+  margin: 10px auto;
+  opacity: 0.3;
+}
+
+input[type="radio"][value="360630"] {
+  background-image: url('images/egypt.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="524901"] {
+  background-image: url('images/russia.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="993800"] {
+  background-image: url('images/south_africa.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="1816670"] {
+  background-image: url('images/china.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="1850147"] {
+  background-image: url('images/japan.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="1880252"] {
+  background-image: url('images/singapore.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="2147714"] {
+  background-image: url('images/australia.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="2643743"] {
+  background-image: url('images/uk.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="2968815"] {
+  background-image: url('images/france.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="3451189"] {
+  background-image: url('images/brazil.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="5128581"] {
+  background-image: url('images/usa.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+input[type="radio"][value="5368361"] {
+  background-image: url('images/usa.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
