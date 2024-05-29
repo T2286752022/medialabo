@@ -5,31 +5,6 @@
   <title>天気情報</title>
   <link rel="stylesheet" href="project.css">
   <style>
-    input[type="radio"] {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-      background-color: #ddd;
-      border-radius: 50%;
-      border: 2px solid #444;
-      vertical-align: middle;
-      cursor: pointer;
-    }
-
-    input[type="radio"]:checked::before {
-      content: '';
-      display: block;
-      width: 10px;
-      height: 10px;
-      margin: 5px;
-      background-color: #444;
-      border-radius: 50%;
-    }
-
     .flag-label {
       display: flex;
       align-items: center;
@@ -39,6 +14,13 @@
     .flag-label img {
       margin-right: 10px;
       width: 30px;
+      height: auto;
+    }
+
+    .result img {
+      display: block;
+      margin-bottom: 10px;
+      width: 50px;
       height: auto;
     }
   </style>
@@ -58,8 +40,24 @@
           const Speed = data.wind.speed;
           const Kazemuki = data.wind.deg;
 
+          const flagMap = {
+            '360630': '/Users/murakamimizuki/Documents/medialabo/egypt.png',
+            '524901': '/Users/murakamimizuki/Documents/medialabo/russia.png',
+            '993800': '/Users/murakamimizuki/Documents/medialabo/south_africa.png',
+            '1816670': '/Users/murakamimizuki/Documents/medialabo/china.png',
+            '1850147': '/Users/murakamimizuki/Documents/medialabo/japan.png',
+            '1880252': '/Users/murakamimizuki/Documents/medialabo/singapore.png',
+            '2147714': '/Users/murakamimizuki/Documents/medialabo/australia.png',
+            '2643743': '/Users/murakamimizuki/Documents/medialabo/uk.png',
+            '2968815': '/Users/murakamimizuki/Documents/medialabo/france.png',
+            '3451189': '/Users/murakamimizuki/Documents/medialabo/brazil.png',
+            '5128581': '/Users/murakamimizuki/Documents/medialabo/usa.png',
+            '5368361': '/Users/murakamimizuki/Documents/medialabo/usa.png'
+          };
+
+          document.getElementById('flag').src = flagMap[cityId];
           document.getElementById('city').textContent = CityName;
-          document.getElementById('Weterrrr').textContent = Weather;
+          document.getElementById('Weather').textContent = Weather;
           document.getElementById('Temp').textContent = `現在の気温：${Temp}°C`;
           document.getElementById('Temp1').textContent = `最低気温: ${Temp1}°C`;
           document.getElementById('Temp2').textContent = `最高気温: ${Temp2}°C`;
@@ -87,68 +85,57 @@
     <form action="">
       <div class="flag-label">
         <input type="radio" name="city" value="360630" onchange="getWeatherInfo(this.value)">
-        <img src="egypt.png" alt="Egypt">
         Cairo カイロ （エジプト）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="524901" onchange="getWeatherInfo(this.value)">
-        <img src="russia.png" alt="Russia">
         Moscow モスクワ （ロシア）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="993800" onchange="getWeatherInfo(this.value)">
-        <img src="south_africa.png" alt="South Africa">
         Johannesburg ヨハネスブルク （南アフリカ）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="1816670" onchange="getWeatherInfo(this.value)">
-        <img src="china.png" alt="China">
         Beijing 北京 （中華人民共和国）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="1850147" onchange="getWeatherInfo(this.value)">
-        <img src="japan.png" alt="Japan">
         Tokyo 東京 （日本）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="1880252" onchange="getWeatherInfo(this.value)">
-        <img src="singapore.png" alt="Singapore">
         Singapore シンガポール
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="2147714" onchange="getWeatherInfo(this.value)">
-        <img src="australia.png" alt="Australia">
         Sydney シドニー （オーストラリア）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="2643743" onchange="getWeatherInfo(this.value)">
-        <img src="uk.png" alt="United Kingdom">
         London ロンドン （イギリス）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="2968815" onchange="getWeatherInfo(this.value)">
-        <img src="france.png" alt="France">
         Paris パリ （フランス）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="3451189" onchange="getWeatherInfo(this.value)">
-        <img src="brazil.png" alt="Brazil">
         Rio de Janeiro リオデジャネイロ （ブラジル）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="5128581" onchange="getWeatherInfo(this.value)">
-        <img src="usa.png" alt="United States">
         New York ニューヨーク （アメリカ合衆国）
       </div>
       <div class="flag-label">
         <input type="radio" name="city" value="5368361" onchange="getWeatherInfo(this.value)">
-        <img src="usa.png" alt="United States">
         Los Angeles ロサンゼルス （アメリカ合衆国）
       </div>
     </form>
     <div class="result">
+      <img id="flag" src="" alt="">
       <h2 id="city"></h2>
-      <p id="Weterrrr"></p>
+      <p id="Weather"></p>
       <p id="Temp"></p>
       <p id="Temp1"></p>
       <p id="Temp2"></p>
