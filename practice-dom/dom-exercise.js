@@ -19,28 +19,25 @@ let data = [
    p.textContent = '写真表と都市の緯度経度のページです';
    h2.insertAdjacentElement('afterend', p);
    // 練習4-3 写真表作成プログラム
-   let div1 = document.querySelector('div#phototable');
-   let img1 = document.createElement('img');
-   img1.setAttribute('src','./hanako.png');
-   let p1 = document.createElement('p');
-   p1.insertAdjacentElement('beforeend', img1);
-   div1.insertAdjacentElement('beforeend', p1);
-   
-   let div2 = document.querySelector('div#phototable');
-   let img2 = document.createElement('img');
-   img2.setAttribute('src','./jiro.png');
-   let p2 = document.createElement('p');
-   p2.insertAdjacentElement('beforeend', img2);
-   div2.insertAdjacentElement('beforeend', p2);
-   
-   let div3 = document.querySelector('div#phototable');
-   let img3 = document.createElement('img');
-   img3.setAttribute('src','./taro.png');
-   let p3 = document.createElement('p');
-   p3.insertAdjacentElement('beforeend', img3);
-   div3.insertAdjacentElement('beforeend', p3);
-   
-   
+   document.addEventListener('DOMContentLoaded', function() {
+      
+      const images = ['taro.png', 'jiro.png', 'hanako.png'];
+    
+      const photoTable = document.getElementById('phototable');
+    
+      images.forEach(src => {
+        
+        const img = document.createElement('img');
+        img.src = src;
+    
+        const p = document.createElement('p');
+        p.appendChild(img);
+    
+        photoTable.appendChild(p);
+      });
+    });
+    
+
    
    
    // 練習4-4 箇条書き削除プログラム
