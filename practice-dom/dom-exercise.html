@@ -3,8 +3,18 @@
 <head>
   <title>練習4-2から4-5</title>
   <link rel="stylesheet" href="practice-dom/dom-exercise.css">
+  <style>
+    #phototable {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    #phototable img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
   <script src="practice-dom/dom-exercise.js" defer></script>
-
 </head>
 <body>
   <!-- 注意: このファイルをエディタで直接編集しないこと！ -->
@@ -15,51 +25,31 @@
 
 
   <h2>練習4-3: 写真表を作る</h2>
-<div id="phototable">
-  <p>
-    <img src="taro.png" style="width: 80px;">
-  </p>
-  <p>
-    <img src="jiro.png" style="width: 80px;">
-  </p>
-  <p>
-    <img src="hanako.png" style="width: 80px;">
-  </p>
-</div>
+  <div id="phototable">
+    <p>
+      <img src="taro.png" style="width: 80px;">
+    </p>
+    <p>
+      <img src="jiro.png" style="width: 80px;">
+    </p>
+    <p>
+      <img src="hanako.png" style="width: 80px;">
+    </p>
+  </div>
 
 
   <h2>練習4-4　4-5:都市の緯度経度を表示する</h2>
   <ul id="location">
-    <Li>
-        札幌 ... 緯度:43.06417, 経度:141.34694
-    </Li>
-    <Li>
-        仙台 ... 緯度:38.26889, 経度:140.87194
-    </Li>
-    <Li>
-        新宿 ... 緯度:35.68944, 経度:139.69167
-    </Li>
-    <Li>
-        名古屋 ... 緯度:35.18028, 経度:136.90667
-    </Li>
-    <Li>
-        大阪 ... 緯度:34.68639, 経度:135.52
-    </Li>
-    <Li>
-        広島 ... 緯度:34.39639, 経度:132.45944
-    </Li>
-    <Li>
-        高知 ... 緯度:33.55972, 経度:133.53111
-    </Li>
-    <Li>
-        福岡 ... 緯度:33.60639, 経度:130.41806
-    </Li>
-    <Li>
-        鹿児島 ... 緯度:31.56028, 経度:130.55806
-    </Li>
-    <Li>
-        沖縄 ... 緯度:26.2125, 経度:127.68111
-    </Li> 
+    <li>札幌 ... 緯度:43.06417, 経度:141.34694</li>
+    <li>仙台 ... 緯度:38.26889, 経度:140.87194</li>
+    <li>新宿 ... 緯度:35.68944, 経度:139.69167</li>
+    <li>名古屋 ... 緯度:35.18028, 経度:136.90667</li>
+    <li>大阪 ... 緯度:34.68639, 経度:135.52</li>
+    <li>広島 ... 緯度:34.39639, 経度:132.45944</li>
+    <li>高知 ... 緯度:33.55972, 経度:133.53111</li>
+    <li>福岡 ... 緯度:33.60639, 経度:130.41806</li>
+    <li>鹿児島 ... 緯度:31.56028, 経度:130.55806</li>
+    <li>沖縄 ... 緯度:26.2125, 経度:127.68111</li>
   </ul>
 </body>
 </html>
