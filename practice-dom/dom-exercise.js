@@ -52,11 +52,11 @@ let data = [
    }
     
     // 練習4-5 箇条書き追加プログラム
-    let li3 = document.querySelector('ul#location');
+    let aaa = document.querySelector('ul#location');
     for(m of data){
   let text;
-  text = m.name + " 緯度:" + m.lat + ", 経度:" + m.lng;
+  text = m.name + "... 緯度:" + m.lat + ", 経度:" + m.lng;
   let p3 = document.createElement("p");
   p3.textContent = text;
-  li3.insertAdjacentElement('beforeend', p3);
+  aaa.insertAdjacentElement('beforeend', p3);
     }
